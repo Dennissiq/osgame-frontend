@@ -35,21 +35,25 @@ function loadAPI() {
             if (response === 'SJF'){
                 $('#textH3').text("Shortest Job First")
             }
+            if (response === 'por Prioridade'){
+                $('#textH3').text("")
+            }
         })
 
         switch (response) {
             case 'SJF':
                 function animationSjf() {
 
+
                     let $box = $('#box'),
                         $box2 = $('#box2'),
                         $box3 = $('#box3'),
                         $box4 = $('#box4'),
                         $title = $('#textH1'),
-                        $subtitle = $('#textH3')
-                    $repeatAnimation = $('#repeatAnimation')
-                    $boxes = $('.box'),
+                        $subtitle = $('#textH3'),
+                        $repeatAnimation = $('#repeatAnimation'),
                         tl = new TimelineLite();
+
 
                     // animation timeline
                     tl.from([$title, $subtitle], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
@@ -93,7 +97,40 @@ function loadAPI() {
                         
 
                 } animationFcfs()
-                
+                break;
+            case 'por Prioridade':
+                function animationPriority(){
+
+                    if (response === 'por Prioridade') {
+                        $('#priorityBox1').text("2")
+                        $('#priorityBox2').text("1")
+                        $('#priorityBox3').text("3")
+                        $('#priorityBox4').text("1")
+                    }
+
+                    let $box = $('#box'),
+                        $box2 = $('#box2'),
+                        $box3 = $('#box3'),
+                        $box4 = $('#box4'),
+                        $title = $('#textH1'),
+                        $subtitle = $('#textH3')
+                        $repeatAnimation = $('#repeatAnimation')
+                        $boxes = $('.box'),
+                        tl = new TimelineLite();
+
+                    // animation timeline
+                    tl.from([$title, $subtitle], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from($box, 1, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from($box2, 1, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from($box3, 1, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from($box4, 1, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
+                        .to($box2, 0.7, {x: '-450', ease: Power4.easeInOut, autoAlpha: 0})
+                        .to($box4, 0.7, {x: '-450', ease: Power4.easeInOut, autoAlpha: 0})
+                        .to($box, 0.7, {x: '-450', ease: Power4.easeInOut, autoAlpha: 0})
+                        .to($box3, 0.7, {x: '-450', ease: Power4.easeInOut, autoAlpha: 0})
+                        .from($repeatAnimation, 0.5, { autoAlpha: 0, ease: Power4.easeInOut });
+                        
+                } animationPriority()
                 break;
             default:
                 break;
