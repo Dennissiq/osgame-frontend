@@ -1,32 +1,3 @@
-<!-- <html>
-
-<head>
-    <script src="../views/MainView.js"></script>
-    <style>
-        canvas {
-            /* it's disable the canvas selection */
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            outline: none;
-            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            /* mobile webkit */
-        }
-    </style>
-</head>
-
-<body>
-    <div class="fakeDevice" style="border: solid 2px gray; overflow: hidden; width: 100%; height: 100%;">
-        <div class="au-animate">
-            <div id="arenaContainer" class="" style="background-color: transparent;"> </div>
-        </div>
-    </div>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,45 +11,44 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
+<body >
     <!-- <canvas id="canvasGame"></canvas> -->
     
-    <h1 id="textH1" class="pt-10 text-white" style="text-align: center"></h1>
-    <h3 id="textH3" class=" text-white" style="text-align: center"></h3>
-    <div class="container" >
+    <div style="margin-left: 250px">
 
-            <div id="box"  style="margin-left: -75px" class="box bg-info" >
-                <h4 id="priorityBox1" class="text-dark text-center mt-2 pt-1"></h4>
-                <div class="boxSmall"></div>
-                <div class="boxSmall boxTiny"></div>
+        <h1 id="textH1" class="pt-10 text-white" style="text-align: center"></h1>
+        <h3 id="textH3" class=" text-white" style="text-align: center"></h3>
+        <div class="container">
+                <div id="box" style="margin-left: 75px" class="box box__single" >
+                    <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                    <div class="boxSmall"></div>
+                    <div class="boxSmall boxTiny"></div>
+                </div>
+                <div id="box2" style="margin-left: 75px" class="box box__double">
+                    <h2 id="priorityBox2" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                    <div class="boxSmall"></div>
+                    <div class="boxSmall boxTiny"></div>
+                </div>
+                <div id="box3" style="margin-left: 75px" class="box box__single">
+                    <h2 id="priorityBox3" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                    <div class="boxSmall "></div>
+                    <div class="boxSmall boxTiny"></div>
+                </div>
+                <div id="box4" style="margin-left: 75px" class="box box__triple">
+                    <h2 id="priorityBox4" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                    <div class="boxSmall"></div>
+                    <div class="boxSmall boxTiny"></div>
+                </div>
             </div>
-            <div id="box2" style="margin-left: -75px" class="box box__double">
-                <h4 id="priorityBox2" class="text-dark text-center mt-2 pt-1"></h4>
-                <div class="boxSmall"></div>
-                <div class="boxSmall boxTiny"></div>
+            <div class="container" style="padding-top: 390px">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-white" id="repeatAnimation" style="cursor: pointer;">criar escalonador aleatoriamente?</h2>
+                    </div>
+                </div>
             </div>
-            <div id="box3" style="margin-left: -75px" class="box bg-info">
-                <h4 id="priorityBox3" class="text-dark text-center mt-2 pt-1"></h4>
-                <div class="boxSmall"></div>
-                <div class="boxSmall boxTiny"></div>
-            </div>
-            <div id="box4" style="margin-left: -75px" class="box box__triple">
-                <h4 id="priorityBox4" class="text-dark text-center mt-2 pt-1"></h4>
-                <div class="boxSmall"></div>
-                <div class="boxSmall boxTiny"></div>
-            </div>
-          
-        </div>
     </div>
-    <div class="container" style="padding-top: 400px">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="text-center text-white" id="repeatAnimation" style="cursor: pointer;">criar escalonador aleatóriamente?</h3>
-                <!-- <h3 class="text-center text-white" id="repeatAnimation" style="cursor: pointer;"><i class="fas fa-redo"></i> animar
-                    novamente?</h3> -->
-            </div>
-        </div>
-    </div>
+    
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>

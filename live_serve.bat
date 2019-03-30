@@ -1,0 +1,1 @@
+live-server --cors --port=8081 --open=/public --host=localhost
