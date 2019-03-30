@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 60px;
 }
 
+.box__half {
+  background: url("../assets/aQuarterBox.png");
+  background-repeat: no-repeat;
+  width: 60px;
+}
+
 .box__double {
   background: url("../assets/box2.png");
   background-repeat: no-repeat;
@@ -65,5 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 #box4 {
   -webkit-transform: translate(70%, -50%);
           transform: translate(70%, -50%);
+}
+
+#halfBox {
+  -webkit-transform: translate(500%, -50%);
+          transform: translate(500%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
