@@ -7,7 +7,8 @@ function loadAPI() {
 			// timeout: 1000
 		});
 
-    gameapi.get('/random')
+    // gameapi.get('/random')
+    gameapi.get('/random/2')
         .then((response) => {
             
             schedulerName(response.data);  
