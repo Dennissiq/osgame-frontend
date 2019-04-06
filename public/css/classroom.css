@@ -1,0 +1,9 @@
+body {
+  background: url("../assets/classroom.png");
+  background-repeat: no-repeat;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=classroom.css.map */

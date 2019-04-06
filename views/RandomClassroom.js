@@ -8,7 +8,7 @@ function loadAPI() {
 		});
 
     // gameapi.get('/random')
-    gameapi.get('/random/2')
+    gameapi.get('/random/')
         .then((response) => {
             
             schedulerName(response.data);  

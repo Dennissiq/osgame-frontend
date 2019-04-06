@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OSGAME</title>
+    <link rel="stylesheet"
+        href="https://gistcdn.githack.com/Dennissiq/d9de0c2f55a40e79f66a6747cd14ba37/raw/7397001a778c5e9a68226d7eb6572bc842d5bf5c/style-guide.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/classroom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <audio id="hintAudioSJF">
+        <source src="./assets/hint.wav" type="audio/wav">
+    </audio>
+    <img src="./assets/classroom.png" usemap="#image-map" style="position: absolute; top: 100; left: 100; opacity:1; *filter: Alpha(opacity=1);" >
+    
+    <map name="image-map">
+        <area target="" alt="Voltar" title="Voltar" href="http://localhost:8081/public/" coords="299,82,396,192" shape="rect">
+    </map>
+
+    <div style="margin-left: 250px;">
+
+        <h1 id="textH1" class="pt-10 text-white" style="text-align: center; z-index:2; position:relative"></h1>
+        <h3 id="textH3" class=" text-white" style="text-align: center; z-index:2; position:relative"></h3>
+        <div class="container">
+            <div id="box" style="margin-left: 75px" class="box box__single">
+                <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                <div class="boxSmall"></div>
+                <div class="boxSmall boxTiny"></div>
+            </div>
+            <div id="halfBox" style="margin-left: 75px" class="box box__half">
+                <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                <div class="boxSmall"></div>
+                <div class="boxSmall boxTiny"></div>
+            </div>
+            <div id="box2" style="margin-left: 75px" class="box box__double">
+                <h2 id="priorityBox2" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                <div class="boxSmall"></div>
+                <div class="boxSmall boxTiny"></div>
+            </div>
+            <div id="box3" style="margin-left: 75px" class="box box__single">
+                <h2 id="priorityBox3" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                <div class="boxSmall "></div>
+                <div class="boxSmall boxTiny"></div>
+            </div>
+            <div id="box4" style="margin-left: 75px" class="box box__triple">
+                <h2 id="priorityBox4" class="text-white text-bold text-center mt-2 pt-1 "></h2>
+                <div class="boxSmall"></div>
+                <div class="boxSmall boxTiny"></div>
+            </div>
+        </div>
+        <div class="container" style="padding-top: 390px">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-white" id="repeatAnimation" onclick="playAudio()" style="cursor: pointer;">repetir?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var hint = document.getElementById("hintAudioSJF");
+
+        function playAudio() {
+            hint.play().then(
+
+                location.reload()
+            );
+        }
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../views/SjfClassroom.js"></script>
+
+</body>
+
+</html>

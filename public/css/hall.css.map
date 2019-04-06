@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EAEF,iBAAiB,EAAE,SAAS;EAC5B,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI;EACZ,QAAQ,EAAE,MAAM;CAEjB",
+    "sources": [
+        "hall.scss"
+    ],
+    "names": [],
+    "file": "hall.css"
+}

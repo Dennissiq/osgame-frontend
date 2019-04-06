@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,58 +9,29 @@
     <link rel="stylesheet"
         href="https://gistcdn.githack.com/Dennissiq/d9de0c2f55a40e79f66a6747cd14ba37/raw/7397001a778c5e9a68226d7eb6572bc842d5bf5c/style-guide.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hall.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body >
-    <!-- <canvas id="canvasGame"></canvas> -->
-    
-    <div style="margin-left: 250px">
 
-        <h1 id="textH1" class="pt-10 text-white" style="text-align: center"></h1>
-        <h3 id="textH3" class=" text-white" style="text-align: center"></h3>
-        <div class="container">
-                <div id="box" style="margin-left: 75px" class="box box__single" >
-                    <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                    <div class="boxSmall"></div>
-                    <div class="boxSmall boxTiny"></div>
-                </div>
-                <div id="halfBox" style="margin-left: 75px" class="box box__half" >
-                    <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                    <div class="boxSmall"></div>
-                    <div class="boxSmall boxTiny"></div>
-                </div>
-                <div id="box2" style="margin-left: 75px" class="box box__double">
-                    <h2 id="priorityBox2" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                    <div class="boxSmall"></div>
-                    <div class="boxSmall boxTiny"></div>
-                </div>
-                <div id="box3" style="margin-left: 75px" class="box box__single">
-                    <h2 id="priorityBox3" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                    <div class="boxSmall "></div>
-                    <div class="boxSmall boxTiny"></div>
-                </div>
-                <div id="box4" style="margin-left: 75px" class="box box__triple">
-                    <h2 id="priorityBox4" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                    <div class="boxSmall"></div>
-                    <div class="boxSmall boxTiny"></div>
-                </div>
-            </div>
-            <div class="container" style="padding-top: 390px">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-center text-white" id="repeatAnimation" style="cursor: pointer;">criar escalonador aleatoriamente?</h2>
-                    </div>
-                </div>
-            </div>
-    </div>
-    
- 
+<body>
+    <img src="./assets/hall.png" alt="" usemap="#image-map">
+    <map name="image-map">
+        <area target="" alt="Sala dos Escalonadores aleatórios" title="Sala dos Escalonadores Aleatórios" href="http://localhost:8081/public/randomRoom.html"
+            coords="227,186,256,583,347,537,348,220" shape="poly" >
+        <area target="" alt="Sala do Escalonador FCFS" title="Sala do Escalonador FCFS" href="http://localhost:8081/public/fcfs.html" coords="440,245,458,460,505,432,506,263" shape="poly">
+        <area target="" alt="Sala do Escalonador SJF" title="Sala do Escalonador SJF" href="http://localhost:8081/public/sjf.html" coords="554,272,565,390,591,374,592,283" shape="poly">
+        <area target="" alt="Sala do Escalonador Round Robin Não Preemptivo" title="Sala do Escalonador Round Robin Não Preemptivo" href="http://localhost:8081/public/rrnp.html" coords="768,283,803,270,796,392,767,377" shape="poly">
+        <area target="" alt="Sala do Escalonador Round Robin Preemptivo" title="Sala do Escalonador Round Robin Preemptivo" href="http://localhost:8081/public/rrp.html" coords="853,262,853,429,902,461,918,244" shape="poly">
+        <area target="" alt="Sala do Escalonador por Prioridade" title="Sala do Escalonador por Prioridade" href="http://localhost:8081/public/priority.html" coords="1013,219,1137,186,1100,581,1013,535" shape="poly">
+    </map>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
-    <script src="../views/MainView.js"></script>
-    
+    <!-- <script src="../views/RandomClassRoom.js"></script> -->
+
 </body>
+
 </html>
