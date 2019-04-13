@@ -10,9 +10,7 @@ function loadAPI() {
     // gameapi.get('/random')
     gameapi.get('/fcfs/')
         .then((response) => {
-            
             schedulerName(response.data);  
-    
         })
         .catch((error) => {
             // location.href('http://localhost:8080/public/404.html')
