@@ -23,6 +23,9 @@ function loadAPI() {
 
     function schedulerName(response){
 
+        let showhHalfBox = document.getElementById('halfBox');
+        showhHalfBox.style.visibility = 'hidden';
+
         console.log('Escalonador: ' + response)
 
         // Set scheduler name
@@ -33,6 +36,9 @@ function loadAPI() {
             if (response === 'Round Robin 1 Quantum P') {
                 $('#textH1').text('Escalonador Round Robin 1 Quantum')
                 $('#textH3').text("Preemptive")
+                $('#textTime').text("Tempo de Execucao: 15ms")
+                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+
             }
         })
 
@@ -40,12 +46,13 @@ function loadAPI() {
             case 'Round Robin 1 Quantum P':
                 function animationRrOneP() {
 
-                    if (response === 'Round Robin 1 Quantums') {
-                        $('#priorityBox1').text("1")
-                        $('#priorityBox2').text("2")
-                        $('#priorityBox3').text("1")
-                        $('#priorityBox4').text("3")
-                    }
+                    /* 
+                                        if (response === 'Round Robin 1 Quantums') {
+                                            $('#priorityBox1').text("1")
+                                            $('#priorityBox2').text("2")
+                                            $('#priorityBox3').text("1")
+                                            $('#priorityBox4').text("3")
+                                        } */
 
                     let $box = $('#box'),
                         $box2 = $('#box2'),
@@ -53,14 +60,22 @@ function loadAPI() {
                         $box4 = $('#box4'),
                         $title = $('#textH1'),
                         $subtitle = $('#textH3'),
-                        $halfBox = $('#halfBox')
-                    $repeatAnimation = $('#repeatAnimation')
+                        $halfBox = $('#halfBox'),
+                        $textBox = $('#textBox'),
+                        $repeatAnimation = $('#repeatAnimation')
                     $boxes = $('.box'),
+                        $textTime = $('#textTime'),
                         tl = new TimelineLite();
+
+                    tl.pause();
+                    TweenMax.to('.well-anim', 2, { repeat: -1, backgroundPosition: "-8800px", ease: SteppedEase.config(25) });
+
+                    tlText = new TimelineLite();
+                    tlText.from($textBox, 2, { x: '-250', autoAlpha: 0 }, Power4.easeInOut)
 
                     // animation timeline
                     tl.to($halfBox, 0, { x: '-350', autoAlpha: 0 })
-                        .from([$title, $subtitle], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from([$title, $subtitle, $textTime], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box2, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box3, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
@@ -133,6 +148,27 @@ function loadAPI() {
         }
 
     }
+
+    $("#playAnimation").click(function () {
+        let showTextBox = document.getElementById('textBox');
+        showTextBox.style.visibility = 'hidden';
+
+        let hint = document.getElementById("hintAudio");
+        hint.play()
+        let showhHalfBox = document.getElementById('halfBox');
+        showhHalfBox.style.visibility = 'visible';
+        tl.play();
+    })
+
+    $("#repeatAnimation").click(function () {
+        // let hint = document.getElementById("audio");
+        // hint.play();
+        // animationSjf()
+        let hint = document.getElementById("hintAudio");
+        hint.play()
+        tl.restart();
+
+    });
 
 }
 

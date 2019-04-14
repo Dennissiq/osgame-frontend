@@ -9,6 +9,59 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Rudiment' !important;
 }
 
+
+
+.well-anim {
+  background: url('../assets/well_char_spritesheet.png');
+  width: 350px;  height:750px; 
+  transform: translate(0%, -60%);
+}
+
+.text-box{
+  transform: translate(10%, -30%);
+  background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+}
+
+.back-btn{
+  transform: translate(-80%, 50%);
+}
+
+.continue-animation{
+  animation-name: shake-horizontal;
+  animation-duration: 8s;
+  animation-iteration-count: infinite
+
+}
+
+.continue-animation:hover{
+  color: rgb(0, 185, 209);
+  cursor: pointer;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
 .text-bold { 
   font-weight: 600;
 }

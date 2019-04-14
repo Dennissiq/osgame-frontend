@@ -18,64 +18,67 @@
     <audio id="hintAudio">
         <source src="./assets/hint.wav" type="audio/wav">
     </audio>
-    <img src="./assets/classroom.png" usemap="#image-map" style="position: absolute; top: 100; left: 100; opacity:1; *filter: Alpha(opacity=1);" >
+    <!-- <img src="./assets/classroom.png" usemap="#image-map" style="position: absolute; top: 100; left: 100; opacity:1; *filter: Alpha(opacity=1);" > -->
     
-    <map name="image-map">
+    <!-- <map name="image-map">
         <area target="" alt="Voltar" title="Voltar" href="http://localhost:8081/public/" coords="299,82,396,192" shape="rect">
-    </map>
+    </map> -->
 
+    <div class="row pt-5 offset-3">
+        <a href="http://localhost:8081/public">
+            <div class="col-3 pt-4 back-btn">
+                <h4 class="text-white">Voltar</h4>
+            </div>
+        </a>
+    </div>
     <div style="margin-left: 250px;">
-
-        <h1 id="textH1" class="pt-10 text-white" style="text-align: center; z-index:2; position:relative"></h1>
+        <h1 id="textH1" class="text-white" style="text-align: center; z-index:2; position:relative"></h1>
         <h3 id="textH3" class=" text-white" style="text-align: center; z-index:2; position:relative"></h3>
+        <h3 id="textTime" class=" text-white" style="text-align: center; z-index:2; position:relative"></h3>
         <div class="container">
             <div id="box" style="margin-left: 75px" class="box box__single">
                 <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
                 <div class="boxSmall"></div>
                 <div class="boxSmall boxTiny"></div>
-            </div>
-            <div id="halfBox" style="margin-left: 75px" class="box box__half">
-                <h2 id="priorityBox1" class="text-white text-bold text-center mt-2 pt-1 "></h2>
-                <div class="boxSmall"></div>
-                <div class="boxSmall boxTiny"></div>
+                <h5 class="text-white text-center pt-5">svchost.exe</h5>
             </div>
             <div id="box2" style="margin-left: 75px" class="box box__double">
                 <h2 id="priorityBox2" class="text-white text-bold text-center mt-2 pt-1 "></h2>
                 <div class="boxSmall"></div>
                 <div class="boxSmall boxTiny"></div>
+                <h5 class="text-white text-center pt-5">wmiprvse.exe</h5>
             </div>
             <div id="box3" style="margin-left: 75px" class="box box__single">
                 <h2 id="priorityBox3" class="text-white text-bold text-center mt-2 pt-1 "></h2>
                 <div class="boxSmall "></div>
                 <div class="boxSmall boxTiny"></div>
+                <h5 class="text-white text-center pt-5">sspsvc.exe</h5>
             </div>
             <div id="box4" style="margin-left: 75px" class="box box__triple">
                 <h2 id="priorityBox4" class="text-white text-bold text-center mt-2 pt-1 "></h2>
                 <div class="boxSmall"></div>
                 <div class="boxSmall boxTiny"></div>
+                <h5 class="text-white text-center pt-5">nissrv.exe</h5>
             </div>
         </div>
-        <div class="container" style="padding-top: 390px">
+        <div class="container pb-2" style="padding-top: 280px">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center text-white" id="repeatAnimation" onclick="playAudio()" style="cursor: pointer;">repetir?</h2>
+                    <h2 class="text-center text-white" id="repeatAnimation" onclick="repeatAnimation()" style="cursor: pointer;">repetir?</h2>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container ">
+        <div  class="row ">
+            <div class="offset-1 col-10 rounded text-box" id="textBox">
+                <p id="textContent" class="p-2 text-bold"></p>
+                <p class="float-right continue-animation" id="playAnimation" onclick="playAnimation()"> <i class="fas fa-arrow-right fa-2x"></i></p> 
+            </div>
 
-    <script>
-        var hint = document.getElementById("hintAudio");
-
-        function playAudio() {
-            hint.play().then(
-
-                location.reload()
-            );
-        }
-
-    </script>
-
+        </div>
+    </div>
+    <div class="well-anim"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>

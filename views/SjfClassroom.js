@@ -32,6 +32,8 @@ function loadAPI() {
 
             $('#textH1').text('Escalonador ' + response)
             $('#textH3').text("Shortest Job First")
+            $('#textTime').text("Tempo de Execucao: 7ms")
+            $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
 
         })
 
@@ -45,14 +47,22 @@ function loadAPI() {
                         $box3 = $('#box3'),
                         $box4 = $('#box4'),
                         $halfBox = $('#halfBox')
-                        $title = $('#textH1'),
+                    $title = $('#textH1'),
                         $subtitle = $('#textH3'),
+                        $textTime = $('#textTime'),
                         $repeatAnimation = $('#repeatAnimation'),
+                        $textBox = $('#textBox'),
                         tl = new TimelineLite();
+
+                    tl.pause();
+                    TweenMax.to('.well-anim', 2, { repeat: -1, backgroundPosition: "-8800px", ease: SteppedEase.config(25) });
+
+                    tlText = new TimelineLite();
+                    tlText.from($textBox, 2, { x: '-250', autoAlpha: 0 }, Power4.easeInOut)
 
                     // animation timeline
                     tl.to($halfBox, 0, { x: '150', autoAlpha: 0 })
-                        .from([$title, $subtitle], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
+                        .from([$title, $subtitle, $textTime], 0.7, { x: '150', y: '-40', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box2, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
                         .from($box3, 0.5, { x: '150', autoAlpha: 0, ease: Power4.easeInOut })
@@ -71,6 +81,24 @@ function loadAPI() {
 
     }
 
+    $("#playAnimation").click(function () {
+        let showTextBox = document.getElementById('textBox');
+        showTextBox.style.visibility = 'hidden';
+
+        let hint = document.getElementById("hintAudio");
+        hint.play()
+        tl.play();
+    })
+
+    $("#repeatAnimation").click(function () {
+        // let hint = document.getElementById("audio");
+        // hint.play();
+        // animationSjf()
+        let hint = document.getElementById("hintAudio");
+        hint.play()
+        tl.restart();
+
+    });
 }
 
 loadAPI();

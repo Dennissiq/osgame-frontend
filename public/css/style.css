@@ -7,6 +7,97 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Rudiment' !important;
 }
 
+.well-anim {
+  background: url("../assets/well_char_spritesheet.png");
+  width: 350px;
+  height: 750px;
+  -webkit-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
+}
+
+.text-box {
+  -webkit-transform: translate(10%, -30%);
+          transform: translate(10%, -30%);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.back-btn {
+  -webkit-transform: translate(-80%, 50%);
+          transform: translate(-80%, 50%);
+}
+
+.continue-animation {
+  -webkit-animation-name: shake-horizontal;
+          animation-name: shake-horizontal;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.continue-animation:hover {
+  color: #00b9d1;
+  cursor: pointer;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
 .text-bold {
   font-weight: 600;
 }
