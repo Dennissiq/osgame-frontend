@@ -93,7 +93,7 @@ function loadAPI() {
         showTextBox.style.visibility = 'hidden';
 
         let hint = document.getElementById("hintAudio");
-        hint.play()
+        hint.play();
         tl.play();
     })
 
