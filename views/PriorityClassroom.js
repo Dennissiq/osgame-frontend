@@ -30,10 +30,10 @@ function loadAPI() {
 
             console.log(response)
 
-            $('#textH1').text('Escalonador ' + response)
-            $('#textH3').text(" ")
+            $('#textH1').text('Escalonador ')
+            $('#textH3').text(response)
             $('#textTime').text("Tempo de Execucao: 12ms")
-            $('#textContent').text("Roudin Robin Não Preemptivo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+            $('#textContent').text("A ideia por trás deste algoritmo é simples: oferecer um tratamento distinto à processos diversos. No instante da criação de um processo ele recebe uma prioridade, e quando o escalonador tiver que escolher entre os processos, escolherá aquele com maior prioridade.")
 
         })
 

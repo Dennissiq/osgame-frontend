@@ -31,9 +31,13 @@ function loadAPI() {
             console.log(response)
 
             $('#textH1').text('Escalonador ' + response)
-            $('#textH3').text("Shortest Job First")
-            $('#textTime').text("Tempo de Execucao: 7ms")
-            $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+            $('#textH3').text('Shortest Job First')
+            $('#textTime').text("Tempo de Execucao: 8ms")
+            $('#textContent').text("No escalonamento Shortest Job First (SJF), o processo que necessita do menor tempo para execução na CPU é o escolhido pelo escalonador ou seja, ele privilegia os processos de tamanho menor. Para o funcionamento deste escalonador é necessário o conhecimento prévio do tempo de execução de todos os processos. Caso existam dois processos com o mesmo tempo de execução é utilizado o padrão de ordem de chegada(FCFS).")
+            $('#timeBox').text('1ms')
+            $('#timeBox2').text('2ms')
+            $('#timeBox3').text('1ms')
+            $('#timeBox4').text('4ms')
 
         })
 
@@ -41,13 +45,12 @@ function loadAPI() {
             case 'SJF':
                 function animationSjf() {
 
-
                     let $box = $('#box'),
                         $box2 = $('#box2'),
                         $box3 = $('#box3'),
                         $box4 = $('#box4'),
                         $halfBox = $('#halfBox')
-                    $title = $('#textH1'),
+                        $title = $('#textH1'),
                         $subtitle = $('#textH3'),
                         $textTime = $('#textTime'),
                         $repeatAnimation = $('#repeatAnimation'),
