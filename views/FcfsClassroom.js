@@ -31,7 +31,7 @@ function loadAPI() {
                 $('#textH1').text('Escalonador ' + response)
                 $('#textH3').text("First Come First Served")
                 $('#textTime').text("Tempo de Execucao: 8ms")
-                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+                $('#textContent').text("Vamos falar sobre a técnica de escalonamento First Come First Served, também conhecido pelas siglas FCFS e FIFO. Assim como a tradução sugere, o escalonamento de FCFS classifica os processos por ordem de chegada, independente do seu tempo de duração ou prioridade.")
 
         })
 
