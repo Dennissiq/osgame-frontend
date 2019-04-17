@@ -33,7 +33,7 @@ function loadAPI() {
             $('#textH1').text('Escalonador ')
             $('#textH3').text(response)
             $('#textTime').text("Tempo de Execucao: 12ms")
-            $('#textContent').text("A ideia por trás deste algoritmo é simples: oferecer um tratamento distinto à processos diversos. No instante da criação de um processo ele recebe uma prioridade, e quando o escalonador tiver que escolher entre os processos, escolherá aquele com maior prioridade.")
+            $('#textContent').text("Escalonador por prioridade: A ideia por trás deste algoritmo é simples: oferecer um tratamento distinto à processos diversos. No instante da criação de um processo ele recebe uma prioridade, e quando o escalonador tiver que escolher entre os processos, escolherá aquele com maior prioridade.")
 
         })
 

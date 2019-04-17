@@ -37,7 +37,7 @@ function loadAPI() {
                 $('#textH1').text('Escalonador Round Robin 1 Quantum')
                 $('#textH3').text("Non preemptive")
                 $('#textTime').text("Tempo de Execucao: 10ms")
-                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+                $('#textContent').text("Iremos falar um pouco sobre a técnica de escalonamento Round Robin, que também se conhece por 'RR'. Basicamente, o escalonamento de Round Robin usa fatias do tempo iguais e em ordem circular, manipulando todos os processo, independente da prioridade.")
             }
         })
 

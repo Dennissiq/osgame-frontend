@@ -36,7 +36,7 @@ function loadAPI() {
                 $('#textH1').text('Escalonador Round Robin 1 Quantum')
                 $('#textH3').text("Non preemptive")
                 $('#textTime').text("Tempo de Execucao: 10ms")
-                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+                $('#textContent').text("Iremos falar um pouco sobre a técnica de escalonamento Round Robin, que também se conhece por 'RR'. Basicamente, o escalonamento de Round Robin usa fatias do tempo iguais e em ordem circular, manipulando todos os processo, independente da prioridade.")
 
                 
             }
@@ -44,8 +44,7 @@ function loadAPI() {
                 $('#textH1').text('Escalonador Round Robin 1 Quantum')
                 $('#textH3').text("Preemptive")
                 $('#textTime').text("Tempo de Execucao: 15ms")
-                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
-
+                $('#textContent').text("Iremos falar um pouco sobre a técnica de escalonamento Round Robin, que também se conhece por 'RR', porém agora sendo preemptiva. Basicamente, o escalonamento de Round Robin continua manipulando todos os processo da mesma forma, só que por ser preemptiva, ele pode interromper um processo em execução para executar outro.")
             }
 
             if (response !== 'Round Robin 1 Quantum NP' && response !== 'Round Robin 1 Quantum P' ){
@@ -64,12 +63,17 @@ function loadAPI() {
                 $('#textH3').text("Shortest Job First")
                 $('#textTime').text("Tempo de Execucao: 7ms")
                 $('#textContent').text("No escalonamento Shortest Job First (SJF), o processo que necessita do menor tempo para execução na CPU é o escolhido pelo escalonador ou seja, ele privilegia os processos de tamanho menor. Para o funcionamento deste escalonador é necessário o conhecimento prévio do tempo de execução de todos os processos. Caso existam dois processos com o mesmo tempo de execução é utilizado o padrão de ordem de chegada(FCFS).")
+                $('#timeBox').text('1ms')
+                $('#timeBox2').text('2ms')
+                $('#timeBox3').text('1ms')
+                $('#timeBox4').text('4ms')
 
             }
             if (response === 'por Prioridade'){
-                $('#textH3').text(" ")
+                $('#textH1').text("Escalonador")
+                $('#textH3').text("por Prioridade")
                 $('#textTime').text("Tempo de Execucao: 12ms")
-                $('#textContent').text("A ideia por trás deste algoritmo é simples: oferecer um tratamento distinto à processos diversos. No instante da criação de um processo ele recebe uma prioridade, e quando o escalonador tiver que escolher entre os processos, escolherá aquele com maior prioridade.")
+                $('#textContent').text("Escalonador por prioridade: A ideia por trás deste algoritmo é simples: oferecer um tratamento distinto à processos diversos. No instante da criação de um processo ele recebe uma prioridade, e quando o escalonador tiver que escolher entre os processos, escolherá aquele com maior prioridade.")
 
             }
         })

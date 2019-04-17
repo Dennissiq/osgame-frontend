@@ -37,7 +37,7 @@ function loadAPI() {
                 $('#textH1').text('Escalonador Round Robin 1 Quantum')
                 $('#textH3').text("Preemptive")
                 $('#textTime').text("Tempo de Execucao: 15ms")
-                $('#textContent').text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis dolor a magna vehicula, ac pretium libero fermentum. Ut porta justo non laoreet pulvinar.Nulla eu fringilla dolor. Etiam sed metus et neque pharetra bibendum. Duis condimentum gravida cursus.In ultricies pharetra libero vel feugiat.Pellentesque viverra leo ac odio gravida eleifend.Morbi consequat ligula elit, id egestas odio sollicitudin a.Vivamus sed ipsum tortor.Nulla luctus tortor vel cursus accumsan. ")
+                $('#textContent').text("Iremos falar um pouco sobre a técnica de escalonamento Round Robin, que também se conhece por 'RR', porém agora sendo preemptiva. Basicamente, o escalonamento de Round Robin continua manipulando todos os processo da mesma forma, só que por ser preemptiva, ele pode interromper um processo em execução para executar outro.")
 
             }
         })
