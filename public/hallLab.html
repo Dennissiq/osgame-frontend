@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>OSGAME</title>
+		<link
+			rel="stylesheet"
+			href="https://gistcdn.githack.com/Dennissiq/d9de0c2f55a40e79f66a6747cd14ba37/raw/7397001a778c5e9a68226d7eb6572bc842d5bf5c/style-guide.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/hall.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<audio id="highschoolSound" autoplay>
+			<source src="./assets/highschoolSound.mp3" type="audio/mp3" />
+		</audio>
+		<img src="./assets/hallLab.png" alt="" usemap="#image-map" />
+		<map name="image-map">
+			<area
+				target=""
+				alt="entrar no elevador"
+				title="entrar no elevador"
+				href="elevatorPanel.html"
+				coords="1365,718,1186,586,1187,147,1363,58"
+				shape="poly"
+			/>
+			<area
+				target=""
+				alt="somente pessoas autorizadas"
+				title="somente pessoas autorizadas"
+				href=""
+				coords="658,270,792,479"
+				shape="rect"
+			/>
+			<area
+				target=""
+				alt="entrar no laboratório"
+				title="entrar no laboratório"
+				href="lab.html"
+				coords="441,587,153,737,154,87,441,198"
+				shape="poly"
+			/>
+			<area
+				target=""
+				alt="chamar elevador"
+				title="chamar elevador"
+				href="elevatorPanel.html"
+				coords="1146,337,1160,333,1161,388,1146,382"
+				shape="poly"
+			/>
+		</map>
+		<script>
+			let highschoolSound = document.getElementById('highschoolSound')
+
+			highschoolSound.loop = true
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!-- <script src="../views/RandomClassRoom.js"></script> -->
+	</body>
+</html>

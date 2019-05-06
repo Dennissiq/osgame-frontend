@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>OSGAME</title>
+		<link
+			rel="stylesheet"
+			href="https://gistcdn.githack.com/Dennissiq/d9de0c2f55a40e79f66a6747cd14ba37/raw/7397001a778c5e9a68226d7eb6572bc842d5bf5c/style-guide.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/hall.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<audio id="highschoolSound" autoplay>
+			<source src="./assets/highschoolSound.mp3" type="audio/mp3" />
+		</audio>
+		<img src="./assets/hallFcfs.png" alt="" usemap="#image-map" />
+		<map name="image-map">
+			<area
+				target=""
+				alt="escalonador fcfs"
+				title="escalonador fcfs"
+				href="fcfs.html"
+				coords="131,211,131,698,310,598,310,256"
+				shape="poly"
+			/>
+			<area
+				target=""
+				alt="corredor do escalonador sjf"
+				title="corredor do escalonador sjf"
+				href="hallSjf.html"
+				coords="582,318,587,442,777,441,775,319"
+				shape="poly"
+			/>
+			<area
+				target=""
+				alt=""
+				title="hall principal"
+				href="hall.html"
+				coords="1359,0,1363,178,1184,231,1176,98"
+				shape="poly"
+			/>
+		</map>
+		<script>
+			let highschoolSound = document.getElementById('highschoolSound')
+
+			highschoolSound.loop = true
+
+			function elevadorSelect() {
+				alert('elevator')
+			}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!-- <script src="../views/RandomClassRoom.js"></script> -->
+	</body>
+</html>
