@@ -1,6 +1,4 @@
-
-
-  @font-face {
+@font-face {
     font-family: 'Rudiment' !important;
     src: url('../assets/Rudiment.ttf');
   }
@@ -65,71 +63,3 @@ h1,h2,h3,h4,h5,h6{
 .text-bold { 
   font-weight: 600;
 }
-
-.box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  z-index: 1;
-}
-
-
-.box__single{
-    background: url('../assets/box1.png');
-    background-repeat: no-repeat;
-    width: 60px;
-}
-.box__half{
-    background: url('../assets/aQuarterBox.png');
-    background-repeat: no-repeat;
-    width: 60px;
-}
-
-
-.box__double {
-    background: url('../assets/box2.png');
-    background-repeat: no-repeat;
-    width: 120px;
-}
-
-.box__triple {
-    background: url('../assets/box3.png');
-    background-repeat: no-repeat;
-    width: 180px;
-}
-
-#box {
-    transform: translate(-350%, -50%);
-}
-
-
-
-#box2 {
-  transform: translate(-100%, -50%);
-}
-
-#box3 {
-  transform: translate(50%, -50%);
-}
-#box4 {
-  transform: translate(70%, -50%);
-}
-#halfBox {
-  transform: translate(500%, -50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
