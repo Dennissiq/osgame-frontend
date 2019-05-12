@@ -1,135 +1,123 @@
-
-
-  @font-face {
-    font-family: 'Rudiment' !important;
-    src: url('../assets/Rudiment.ttf');
-  }
-
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Rudiment' !important;
+@font-face {
+	font-family: 'Rudiment' !important;
+	src: url('../assets/Rudiment.ttf');
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rudiment' !important;
+}
 
 .well-anim {
-  background: url('../assets/well_char_spritesheet.png');
-  width: 350px;  height:750px; 
-  transform: translate(0%, -60%);
+	background: url('../assets/well_char_spritesheet.png');
+	width: 350px;
+	height: 750px;
+	transform: translate(0%, -60%);
 }
 
-.text-box{
-  transform: translate(10%, -30%);
-  background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+.text-box {
+	transform: translate(10%, -30%);
+	background-color: rgba($color: #ffffff, $alpha: 0.9);
 }
 
-.back-btn{
-  transform: translate(-80%, 50%);
+.back-btn {
+	transform: translate(-80%, 50%);
 }
 
-.continue-animation{
-  animation-name: shake-horizontal;
-  animation-duration: 8s;
-  animation-iteration-count: infinite
-
+.continue-animation {
+	animation-name: shake-horizontal;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
 }
 
-.continue-animation:hover{
-  color: rgb(0, 185, 209);
-  cursor: pointer;
+.continue-animation:hover {
+	color: rgb(0, 185, 209);
+	cursor: pointer;
+}
+
+body.loading {
+	background-color: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
 }
 
 @keyframes shake-horizontal {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60% {
-    transform: translateX(10px);
-  }
-  80% {
-    transform: translateX(8px);
-  }
-  90% {
-    transform: translateX(-8px);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+	80% {
+		transform: translateX(8px);
+	}
+	90% {
+		transform: translateX(-8px);
+	}
 }
 
-.text-bold { 
-  font-weight: 600;
+.text-bold {
+	font-weight: 600;
 }
 
 .box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	z-index: 1;
 }
 
-
-.box__single{
-    background: url('../assets/box1.png');
-    background-repeat: no-repeat;
-    width: 60px;
+.box__single {
+	background: url('../assets/box1.png');
+	background-repeat: no-repeat;
+	width: 60px;
 }
-.box__half{
-    background: url('../assets/aQuarterBox.png');
-    background-repeat: no-repeat;
-    width: 60px;
+.box__half {
+	background: url('../assets/aQuarterBox.png');
+	background-repeat: no-repeat;
+	width: 60px;
 }
-
 
 .box__double {
-    background: url('../assets/box2.png');
-    background-repeat: no-repeat;
-    width: 120px;
+	background: url('../assets/box2.png');
+	background-repeat: no-repeat;
+	width: 120px;
 }
 
 .box__triple {
-    background: url('../assets/box3.png');
-    background-repeat: no-repeat;
-    width: 180px;
+	background: url('../assets/box3.png');
+	background-repeat: no-repeat;
+	width: 180px;
 }
 
 #box {
-    transform: translate(-350%, -50%);
+	transform: translate(-350%, -50%);
 }
 
-
-
 #box2 {
-  transform: translate(-100%, -50%);
+	transform: translate(-100%, -50%);
 }
 
 #box3 {
-  transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
 }
 #box4 {
-  transform: translate(70%, -50%);
+	transform: translate(70%, -50%);
 }
 #halfBox {
-  transform: translate(500%, -50%);
+	transform: translate(500%, -50%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

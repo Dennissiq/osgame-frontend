@@ -23,22 +23,30 @@
 		<audio id="highschoolSound" autoplay>
 			<source src="./assets/highschoolSound.mp3" type="audio/mp3" />
 		</audio>
-		<img src="./assets/hallWorstFit.png" alt="" usemap="#image-map" />
+		<img src="./assets/hallNextFit.png" alt="" usemap="#image-map" />
 		<map name="image-map">
 			<area
 				target=""
-				alt="sala da memória Worst Fit"
-				title="sala da memória Worst Fit"
-				href="worstFit.html"
-				coords="311,598,131,698,132,210,311,254"
+				alt="sala da memória Next Fit"
+				title="sala da memória Next Fit"
+				href="nextFit.html"
+				coords="131,211,131,698,310,598,310,256"
 				shape="poly"
 			/>
 			<area
 				target=""
-				alt="voltar para corredor da memória First Fit"
-				title="voltar para corredor da memória First Fit"
-				href="hallFirstFit.html"
-				coords="1182,0,1206,181,1364,135,1362,2"
+				alt="sala da memória Best Fit"
+				title="sala da memória Best Fit"
+				href="hallBestFit.html"
+				coords="582,318,587,442,777,441,775,319"
+				shape="poly"
+			/>
+			<area
+				target=""
+				alt=""
+				title="voltar para o elevador"
+				href="elevatorPanel.html"
+				coords="1359,0,1363,178,1184,231,1176,98"
 				shape="poly"
 			/>
 		</map>
@@ -46,6 +54,10 @@
 			let highschoolSound = document.getElementById('highschoolSound')
 
 			highschoolSound.loop = true
+
+			function elevadorSelect() {
+				alert('elevator')
+			}
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

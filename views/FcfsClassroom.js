@@ -12,6 +12,10 @@ function loadAPI() {
 		.get('/fcfs/')
 		.then(response => {
 			schedulerName(response.data)
+			setTimeout(() => {
+				$('#content').removeClass('hidden-content')
+				$('#load').addClass('hidden-content')
+			}, 1000)
 		})
 		.catch(error => {
 			// location.href('http://localhost:8082/public/404.html')
@@ -22,6 +26,7 @@ function loadAPI() {
 
 	function schedulerName(response) {
 		console.log('Escalonador: ' + response)
+		// $('#content').addClass('hidden-content')
 
 		// Set scheduler name
 		$(document).ready(function() {
@@ -37,6 +42,8 @@ function loadAPI() {
 
 		switch (response) {
 			case 'FCFS':
+				// console.log('fcfs ds')
+
 				function animationFcfs() {
 					// let M1 = TweenMax.to('.well-anim', 2, { repeat: -1, backgroundPosition: "-8800px", ease: SteppedEase.config(25) });
 
