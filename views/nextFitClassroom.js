@@ -1,6 +1,7 @@
 function loadAPI() {
 	let gameapi = axios.create({
 		baseURL: 'http://localhost:8082/api/rest/game',
+		//baseURL: 'http://localhost:8080/api/rest/game',
 		headers: {
 			'Access-Control-Allow-Origin': '*'
 		}
@@ -53,7 +54,8 @@ function loadAPI() {
 						$subtitle = $('#textH3'),
 						$textTime = $('#textTime'),
 						$textListProcess = $('#textListProcess'),
-						$repeatAnimation = $('#repeatAnimation')
+						$repeatAnimation = $('#repeatAnimation'),
+						$randomMemory = $('#randomMemory')
 					;($boxes = $('.box')), ($textBox = $('#textBox')), (tl = new TimelineLite())
 
 					tl.pause()
@@ -106,7 +108,7 @@ function loadAPI() {
 						.to($box6, 0.5, { y: '145', autoAlpha: 1, ease: Power4.easeInOut })
 						.to($box6, 1.5, { y: '174', autoAlpha: 1, ease: Power4.easeInOut })
 						.to($box6, 2.5, { x: '270', autoAlpha: 1, ease: Power4.easeInOut })
-						.from($repeatAnimation, 0.5, { autoAlpha: 0, ease: Power4.easeInOut })
+						.from([$repeatAnimation,$randomMemory], 0.5, { autoAlpha: 0, ease: Power4.easeInOut })
 				}
 				animationNextFit()
 				break
@@ -131,6 +133,9 @@ function loadAPI() {
 		let hint = document.getElementById('hintAudio')
 		hint.play()
 		tl.restart()
+	})
+	$('#randomMemory').click(function() {
+		window.location.href = 'http://localhost:8081/public/randomMemory.html'
 	})
 }
 

@@ -40,13 +40,16 @@
 			<audio id="hintAudio">
 				<source src="./assets/hint.wav" type="audio/wav" />
 			</audio>
-			<div class="row pt-5 offset-3">
-				<a href="http://localhost:8081/public/hallFirstFit.html">
-					<div class="col-3 pt-4 back-btn">
-						<h4 class="text-white">Voltar</h4>
-					</div>
-				</a>
+			<div class="container">
+				<div class="row pt-5 offset-3">
+					<a href="http://localhost:8081/public/hallFirstFit.html">
+						<div class="col-12 pt-4 back-btn ">
+							<h5 class="text-white title-spaced">Ir para hall</h5>
+						</div>
+					</a>
+				</div>
 			</div>
+			
 			<div style="margin-left: 250px;">
 				<h1
 					id="textH1"
@@ -105,14 +108,24 @@
 				<div class="container pb-2" style="padding-top: 240px">
 					<div class="row">
 						<div class="col-12">
-							<h2
+							<h5
 								class="text-center text-white"
 								id="repeatAnimation"
 								onclick="repeatAnimation()"
 								style="cursor: pointer;"
 							>
 								repetir?
-							</h2>
+							</h5>
+						</div>
+						<div class="col-12">
+							<h5
+								class="text-center text-white"
+								id="randomMemory"
+								onclick="randomMemory()"
+								style="cursor: pointer;"
+							>
+								Ir para sala de memorias aleatorias
+							</h5>
 						</div>
 					</div>
 				</div>
@@ -136,6 +149,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script src="../views/firstFitClassroom.js"></script>
+		<script src="../views/FirstFitClassroom.js"></script>
 	</body>
 </html>

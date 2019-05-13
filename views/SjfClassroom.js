@@ -1,6 +1,7 @@
 function loadAPI() {
 	let gameapi = axios.create({
 		baseURL: 'http://localhost:8082/api/rest/game',
+		//baseURL: 'http://localhost:8080/api/rest/game',
 		headers: {
 			'Access-Control-Allow-Origin': '*'
 		}
