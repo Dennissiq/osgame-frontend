@@ -23,65 +23,29 @@
 		<audio id="highschoolSound" autoplay>
 			<source src="./assets/highschoolSound.mp3" type="audio/mp3" />
 		</audio>
-
-		<img
-			src="./assets/hall.png"
-			style="height: 100%; width: 100%; position: absolute;"
-			alt=""
-			usemap="#image-map"
-		/>
+		<img src="./assets/lotteryHall.png" alt="" usemap="#image-map" />
 		<map name="image-map">
-			<!-- <area
-				target=""
-				alt="Corredor FCFS"
-				title="Corredor FCFS"
-				href="hallFcfs.html"
-				coords="415,426,816,250,818,2,413,4"
-				shape="poly"
-			/> -->
 			<area
 				target=""
-				alt="Corredor FCFS"
-				title="Corredor FCFS"
-				href="hallFcfs.html"
-				coords="511,0,511,92,390,98,393,210,470,203,513,337,792,249,789,0,639,0,597,0,556,0"
+				alt="Sala dos escalonador por loteria"
+				title="Sala dos escalonador por loteria"
+				href="lottery.html"
+				coords="311,598,131,698,132,210,311,254"
 				shape="poly"
 			/>
 			<area
 				target=""
-				alt="Selecione o andar"
-				title="Selecione o andar"
+				alt="voltar para elevador"
+				title="voltar para elevador"
 				href="elevatorPanel.html"
-				coords="1081,65,1079,226,1195,215,1198,64"
+				coords="1182,0,1206,181,1364,135,1362,2"
 				shape="poly"
-			/>
-			<area
-				target=""
-				alt=""
-				title="Voltar para menu inicial"
-				href="index.html"
-				coords="1157,764,1365,645"
-				shape="rect"
-			/>
-
-			<area
-				target=""
-				alt=""
-				title=""
-				href="elevatorPanel.html"
-				coords="1056,139,1075,161"
-				shape="rect"
 			/>
 		</map>
-
 		<script>
 			let highschoolSound = document.getElementById('highschoolSound')
 
 			highschoolSound.loop = true
-
-			function elevadorSelect() {
-				alert('elevator')
-			}
 		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
