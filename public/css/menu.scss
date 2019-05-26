@@ -13,6 +13,15 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.bg-image-quiz {
+	background-image: url('../assets/lab.png');
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 /* Position text in the middle of the page/image */
 .bg-text {

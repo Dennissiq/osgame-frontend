@@ -12,6 +12,23 @@ h6 {
 	font-family: 'Rudiment' !important;
 }
 
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
+	font-family: 'Poppins' !important;
+}
+h1.title-big,
+h2.title-big,
+h3.title-big,
+h4.title-big,
+h5.title-big,
+h6.title-big {
+	font-family: 'Poppins' !important;
+}
+
 .well-anim {
 	background: url('../assets/well_char_spritesheet.png');
 	width: 350px;

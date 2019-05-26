@@ -26,39 +26,38 @@
 		<audio id="signalSound">
 			<source src="./assets/signal.mp3" type="audio/mp3" />
 		</audio>
-		<div class="bg-image"></div>
+		<div class="bg-image-quiz"></div>
+		<div class="bg-text-back">
+			<a href="index.html">
+				<h5 class="title float-left p-3">menu</h5>
+			</a>
+		</div>
 		<div class="bg-text">
 			<div class="container">
 				<div class="row ">
 					<div class="col-12">
-						<img
-							src="./assets/logo.png"
-							class="pulsate-bck"
-							width="600px"
-							alt=""
-							srcset=""
-						/>
-					</div>
-				</div>
-				<div class="row pt-5">
-					<div class="col-6 offset-3">
-						<button
-							class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
-							onclick="playGame()"
-						>
-							INICIAR JOGO
-						</button>
+						<h1 class="text-dark title-big">Parabéns!!! Certa resposta</h1>
+						<h2 id="questionName" class="text-dark title"></h2>
 					</div>
 				</div>
 				<div class="row pt-3">
 					<div class="col-6 offset-3">
-						<a href="quiz.html">
-							<button
-								class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
-							>
-								QUIZ
-							</button>
-						</a>
+						<button
+							id="alternative1"
+							class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
+						></button>
+						<button
+							id="alternative2"
+							class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
+						></button>
+						<button
+							id="alternative3"
+							class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
+						></button>
+						<button
+							id="alternative4"
+							class="btn btn-lg btn-menu title-spaced btn-block jello-horizontal"
+						></button>
 					</div>
 				</div>
 			</div>
@@ -75,9 +74,9 @@
 			}
 		</script>
 
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-		<!-- <script src="../views/RandomClassRoom.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="../views/quiz/Questions.js"></script>
 	</body>
 </html>
